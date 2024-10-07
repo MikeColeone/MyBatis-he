@@ -1,0 +1,5 @@
+<mapper namespace="org.mybatis.example.BlogMapper">
+    <select id="selectBlog" parameterType="int" resultType="Blog">
+        SELECT * FROM Blog WHERE id = #{id}
+    </select>
+</mapper>
